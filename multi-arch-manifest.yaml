@@ -1,0 +1,21 @@
+image: bkanis/docker-sn-midserver:latest
+manifests:
+  - image: bkanis/docker-sn-midserver:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: bkanis/docker-sn-midserver:arm32v5
+    platform:
+      architecture: arm
+      os: linux
+      variant: v5
+  - image: bkanis/docker-sn-midserver:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: bkanis/docker-sn-midserver:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
