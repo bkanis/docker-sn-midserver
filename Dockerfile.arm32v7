@@ -23,7 +23,7 @@ RUN apt-get -q update && apt-get install -qy unzip \
     rm -rf /tmp/*
 
 RUN wget --no-check-certificate \
-    https://install.service-now.com/glide/distribution/builds/package/mid/2020/01/12/mid.orlando-12-11-2019__patch0-hotfix1-01-08-2020_01-12-2020_1944.linux.x86-32.zip \
+    https://install.service-now.com/glide/distribution/builds/package/app-signed/mid/2020/07/17/mid.paris-06-24-2020__patch0-hotfix1-07-07-2020_07-17-2020_1943.linux.x86-32.zip \
     -O /tmp/mid.zip && \
     unzip -d /opt /tmp/mid.zip && \
     mv /opt/agent/config.xml /opt/ && \
